@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fruity Plants</title>
+  <meta name="description" content="Official website of Fruity Plants by Muhammad Saqlain." />
+  <style>
+    :root { --w: 900px; --pad: 20px; font: 16px/1.6 system-ui, Arial, sans-serif; }
+    body { margin:0; }
+    header { padding:60px var(--pad); background:#2b7a0b; color:#fff; text-align:center; }
+    header h1 { margin:0 0 10px; font-size:2.4rem; letter-spacing:.5px; }
+    header p { opacity:.9; margin:0; font-size:1.1rem; }
+    nav { display:flex; gap:18px; justify-content:center; padding:14px; border-bottom:1px solid #eee; flex-wrap:wrap;}
+    nav a { text-decoration:none; color:#2b7a0b; font-weight:600; }
+    .container { max-width:var(--w); margin:auto; padding:30px var(--pad); }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:18px; }
+    .card { border:1px solid #eaeaea; border-radius:14px; padding:18px; box-shadow:0 1px 3px rgba(0,0,0,.04); background:#fff; }
+    footer { text-align:center; padding:28px; border-top:1px solid #eee; color:#555; }
+    .btn { display:inline-block; padding:10px 16px; border-radius:10px; border:1px solid #fff; text-decoration:none; background:#fff; color:#2b7a0b; font-weight:bold; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Fruity Plants</h1>
+    <p>Healthy fruit plants for your farm & garden</p>
+    <p style="margin-top:14px;">
+      <a class="btn" href="#contact">Contact Us</a>
+    </p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#plants">Plants</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main class="container">
+    <section id="about" class="card">
+      <h2>About Fruity Plants</h2>
+      <p>Fruity Plants, founded by Muhammad Saqlain, provides healthy and productive fruit plants for farmers and home gardeners. Our mission is to promote sustainable agriculture with high-quality plants that ensure better yield and long-lasting growth.</p>
+    </section>
+
+    <section id="plants" class="card">
+      <h2>Our Plants</h2>
+      <ul>
+        <li>Mango Plants — grafted & high yield</li>
+        <li>Guava Plants — disease resistant varieties</li>
+        <li>Citrus (Kinnow, Orange, Lemon) — fresh nursery stock</li>
+        <li>Pomegranate, Grapes & more seasonal fruit plants</li>
+      </ul>
+    </section>
+
+    <section id="services" class="card">
+      <h2>Services</h2>
+      <ul>
+        <li>Guidance on fruit plant care & management</li>
+        <li>Supply of bulk fruit plants for farms</li>
+        <li>Home garden consultation</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p><strong>Owner:</strong> Muhammad Saqlain</p>
+      <p><strong>WhatsApp:</strong> 03036486165</p>
+      <p><strong>Email:</strong> you@example.com</p>
+    </section>
+  </main>
+
+  <footer>© <span id="y"></span> Fruity Plants | Muhammad Saqlain. All rights reserved.</footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
